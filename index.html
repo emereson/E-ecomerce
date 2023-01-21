@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>E-commerce</title>
+</head>
+
+<body>
+  <nav class="loader">
+    <div class="preLoader">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="loaderIcon">
+        <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
+        <path
+          d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+        </path>
+      </svg>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+    </div>
+  </nav>
+  <!--fin del loader-->
+  <header class="header">
+    <nav class="nav">
+      <a class="navLogo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="logo-icon">
+          <path
+            d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+          </path>
+        </svg>
+        store
+      </a>
+      <nav class="navMenu  ">
+
+        <a class="navItem " href="#">Home</a>
+        <a class="navItem " href="#prod">Products</a>
+
+      </nav>
+      <nav class="navIcon">
+        <i class='bx bx-moon bx-tada bx-flip-horizontal' id="moon"></i>
+        <div class="navBag">
+          <div class="cart">
+            <i id="bag" class='icons bx bx-cart bx-fade-down'></i>
+            <span class="count">0</span>
+          </div>
+        </div>
+        <i class='bx bx-grid-alt bx-flip-horizontal'></i>
+      </nav>
+    </nav>
+  </header>
+  <!--fin del nav-->
+  <main class="main">
+    <div class="home-principal  ">
+      <div class="home-image">
+        <img src="./src/img/home.png" class="imageMain" alt="">
+      </div>
+      <div class="home-data">
+        <h1 class="home-title">"New Sweatshirts" <br>"COLLECTIONS 2022"</h1>
+        <p class="home-description">
+          "Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+          design."
+        </p>
+        <span class="home-price">$14.00</span>
+        <div class="home-button">
+          <a href="#" class="button button-gray button-small">Discover</a>
+          <button class="button button-add">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--fin del main-->
+
+  <div class="container">
+    <div>
+    </div>
+    <div class="filters_mixitup">
+      <div id="prod" class="tags">
+        <div data-filter="all">
+          <h3>Show All</h3>
+          <span>Show all products</span>
+        </div>
+        <div data-filter=".Hoodies">
+          <h3>Hoodies</h3>
+          <span>3 products</span>
+        </div>
+        <div data-filter=".Shirts">
+          <h3>Shirts</h3>
+          <span>4 products</span>
+        </div>
+        <div data-filter=".Sweatshirts">
+          <h3>Sweatshirts</h3>
+          <span>4 products</span>
+        </div>
+      </div>
+    </div>
+    <div class="content_element">
+      <div class="products">
+      </div>
+    </div>
+  </div>
+
+  <div class="contentCar">
+    <div class="navCart">
+      <i class='bx bx-x'></i>
+      <h2 class="myCart">My Cart</h2>
+    </div>
+    <div class="carProducts"></div>
+    <div class="carTotal"></div>
+  </div>
+
+  </div>
+  <div class="footer section">
+    <div class="footer_container container">
+      <div class="footer_content">
+        <h3 class="footer_title">Our information</h3>
+        <ul class="footer_list">
+          <li>Toluca-México</li>
+        </ul>
+      </div>
+      <div class="footer_content">
+        <h3 class="footer_title">About Us</h3>
+        <ul class="footer_links">
+          <li>
+            <a href="#" class="footer_link">Support Center</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">Customer Support</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">Copy Right</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="footer_content">
+        <h3 class="footer_title">Product</h3>
+        <ul class="footer_links">
+          <li><a href="#" class="footer_link">Hoodies</a></li>
+          <li><a href="#" class="footer_link">Shirts</a></li>
+          <li><a href="#" class="footer_link">Sweatshirts</a></li>
+        </ul>
+      </div>
+      <div class="footer_content">
+        <h3 class="footer_title">Social</h3>
+        <ul class="footer_social">
+          <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank" class="footer_social-link">
+            <i class='bx bxl-twitter'></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="https://github.com/MiguelAngelGV17/E-commerce.git" target="_blank"><i class='bx bxl-github'></i></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./src/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    mixitup(".products", {
+      selectors: {
+        target: ".element"
+      },
+      animation: {
+        duration: 500
+      }
+    }).filter("all")
+  </script>
+  <script src="./src/dark.js"></script>
+  <script src="./src/cart.js"></script>
+</body>
+
+</html>
